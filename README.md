@@ -1,2 +1,3 @@
-# srproyecto1
-rebrberberb
+# Areas geometricas
+-hallar el area de un cuadrado 
+
