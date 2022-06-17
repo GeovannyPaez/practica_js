@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #ffc8c8;
+}
+ header{
+     width: 100%;
+     height: 80px;
+     background-color: brown;
+     display: flex;
+     flex-direction: column;
+     
+
+ }
+header h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+
+}
+header nav{
+    width: 100%;
+    
+
+}
+header nav ul{
+    width: 100%;
+    height: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    background-color: beige;
+}
+header nav ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+header nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(168, 82, 82);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px;
+}
+header nav ul li .tendecia-central{
+    margin-right: 7px;
+}
+header nav ul li a:hover{
+    box-shadow: 0px 0px 6px 0px rgb(168, 82, 82);
+}
+body h2{
+    text-align: center;
+    margin-top: 75px;
+    border-bottom: 1px solid white;
+    color: brown;
+}
+
+section{
+    min-width: 320px;
+    max-width: 400px;
+    
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+section h2{
+    margin-top: 10px;
+}
+section p{
+    text-align: center;
+    font-size:1.2rem;
+    margin-top: 15px;
+}
+section .section-img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.area .area__cuadrado-img{
+  
+    background-image: url('https://images.emojiterra.com/google/android-11/share/1f7e5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section .area__triangulo-img{
+    width: 180px;
+    background-image: url('https://cdn-01.media-brady.com/store/stfr/media/catalog/product/cache/1/image/85e4522595efc69f496374d01ef2bf13/1514957858/d/m/dmeu_sym4_rge_1_std.lang.all.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+section .area__circle-img{
+    background-image: url('https://www.mendozapost.com/files/image/72/72659/5704df884c09d_1420_!.jpg?s=84331331fba9c856ee54aabcc050eb2f&d=1566500041');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section .area__isosceles-img{
+    background-image: url('https://pic1.zhimg.com/v2-67972be335092f2b40e150228322daf5_b.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 10px;
+   
+}
+
+form label{
+    width: 100%;
+    height: 100%;
+
+}
+form label span{
+    font-size: 1rem;
+    color: brown;
+
+}
+form label input{
+    outline-color: brown;
+    width: 100%;
+    height: 40px;
+    background-color: beige;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.button__perimetro{
+
+    grid-area: 2/1/3/2;
+    border: none;
+    background-color: rgb(239, 0, 0);
+    border-radius: 7px;
+    color: white;
+    font-size: 1.1rem;
+    
+
+}
+.button__perimetro:hover{
+    box-shadow: 0px 0px 6px 0px rgb(239, 0, 0);
+    cursor: pointer;
+}
+form button{
+    border: none;
+    background-color: rgb(239, 0, 0);
+    border-radius: 7px;
+    color: white;
+    font-size: 1.1rem;
+    height: 40px;
+
+}
+.button__area{
+    grid-area: 2;
+    
+}
+form button:hover{
+    box-shadow: 0px 0px 6px 0px rgb(239, 0, 0);
+    cursor: pointer;
+}
+.form-container .form__result{
+    height: 40px;
+    border-radius: 4px;
+    background-color:  brown;
+    
+    align-self: end;
+    grid-area: 3/1/4/3;
+}
+
+.form__result{
+    width: 100%;
+    height: 40px;
+    background-color: brown;
+    border-radius: 6px;
+    
+}
+
+.form__result p{
+    text-align: center;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    line-height: 40px;
+    color: white;
+    margin: 0;
+}
+.calculo_triangulo .form__result{
+    grid-area: 5/1/6/3;
+}
+.calculo-circle .form__result{
+    grid-area: 4/1/5/3;
+}
+.calculo-isoceles .form__result{
+    grid-area: 5/1/6/3;
+}
+.reset{
+    width: 100%;
+    height: 40px;
+    align-self:end;
+    background-color:rgb(239, 0, 0);
+    cursor: pointer; 
+    border: none;
+    border-radius: 6px;
+
+}
+.view_array{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: 2/1/3/3;
+    outline-color: brown;
+    width: 100%;
+    max-width: 360px ;
+    height: 40px;
+    background-color: beige;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    line-height: 40px;
+   
+}
+form .view_array p{
+    margin: 0;
+}
+.form__result {
+    grid-area: 5/1/6/3;
+    color:white;
+    line-height: 40px;
+    text-align: centerS;
+}
+
+form .button__agrearDato{
+    align-self: flex-end;
+}

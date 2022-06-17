@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="porcentaje.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header> 
+        <h1>Mate Berlin</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Areas Geometricas</a></li>
+            <li><a href="/porcentajes.html">Porcentajes</a></li>
+            
+            <li><a class="tendecia-central" href="/medidas_tendencia.html">Medidas de Tendencia Central</a></li></ul>
+        </nav>
+
+       
+    </header>
+
+    <h2>Porcentajes</h2>
+    <main>
+        <h2>Calcula el descuento que tiene tu producto</h2>
+
+        <form action="">
+            <label for="total" class="label_producto">
+                <span>Digite el valor total de tu producto</span>
+                <input id="total" type="number">
+            </label>
+            <label for="descuento" class="label_descuento">
+                <span>¿ Que porcentaje de descuento vas aplicar?</span>
+                <input type="number" id="descuento">
+                
+            </label>
+            <button type="reset" class="reset"><i class='bx bx-reset' style='color:#fafafa'  ></i></button>
+            <button type="button" onclick="calcularDescuentoProducto()">clacular</button>
+            
+            <div class="form__result" >
+                <p id="resultDes"></p>
+            </div>
+            
+            
+        </form>
+    
+        
+    </main>
+    <script src="/src/porcentaje.js"></script>
+</body>
+</html>

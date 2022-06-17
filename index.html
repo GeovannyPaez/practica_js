@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>areas</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <header> 
+        <h1>Mate Berlin</h1>
+
+        <nav>
+            <ul>
+            <li><a href="/porcentajes.html">Porcentajes</a></li>
+            <li><a href="index.html">Areas Geometricas</a></li>
+            <li><a class="tendecia-central" href="/medidas_tendencia.html">Medidas de Tendencia Central</a></li></ul>
+        </nav>
+
+       
+    </header>
+
+    <h2>Areas Geometricas</h1>
+    
+     
+    
+    <section class="area">
+        <h2 class="area__title">Cuadrado</h2>
+        <p class="area__p">Aqui puedes calcular el area y el perimetro del Cuadrado</p>
+        <div class="area__cuadrado-img section-img"></div>
+        <form class="form-container" action="">
+            <label for="inputCuadrado" class="form__lado">
+                <span>Digite un lado</span>
+                <input id="inputCuadrado" type="number">
+            </label>
+            
+            <button type="button" class="button__perimetro" onclick="calcularPerimetroCuadrado()">
+                Calcular Perimetro
+            </button>
+            <button type="button" class="button__area" onclick="calcularAreaCuadrado()">
+                Calcular Area 
+            </button>
+            <button type="reset" class="reset"><i class='bx bx-reset' style='color:#fafafa'  ></i></button>
+            <div class="form__result" >
+                <p id="result-cuadrado"></p>
+            </div>
+        </form>
+    </section>
+    <section>
+        <h2>
+            Triangulo
+        </h2>
+        <p>Aqui puede calcular cualquier dato de tu triangulo</p>
+        <div class="area__triangulo-img section-img"></div>
+        <form action="calculo_triangulo " class="calculo_triangulo">
+            <label for="lado1">
+                <span>lado 1</span>
+                <input id="lado1" type="number">
+            </label>
+               
+            <label for="lado2">
+                <span>lado 2</span>
+                <input id="lado2" type="number">
+            </label>
+               
+            <label for="base">
+                <span>Base</span>
+                <input id="base" type="number">
+            </label>
+                
+            <label for="altura">
+                <span>Altura</span>
+                <input id="altura" type="number">
+
+            </label>
+            <button type="reset" class="reset"><i class='bx bx-reset' style='color:#fafafa'  ></i></button>
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Perimetro
+            </button>
+            
+            <button type="button" 
+            onclick="calcularAreaTriangulo()">
+                Area
+            </button>
+            <div class="form__result">
+                <p id="result-triangulo"></p>
+            </div>
+        </form>
+    </section>
+    <section>
+        <h2>Circulo</h2>
+        <p>Puedes clacular cualquier dato de el circulo con solo el Radio</p>
+        <div class="area__circle-img section-img"></div>
+        
+        <form action="calculo-circle" class="calculo-circle">
+            <label for="radio">
+                <span>Radio:</span>
+                <input id="radio" name="radio" type="number">
+            </label>
+            <button type="reset" class="reset"><i class='bx bx-reset' style='color:#fafafa'  ></i></button>
+            <button type="button" onclick="calculardiametroCirculo()">Diametro</button>
+            <button type="button" onclick="calcularperimetrotroCirculo()">Perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Area</button>
+            <div class="form__result">
+                <p id="result-circle"></p>
+            </div>
+        </form>
+    </section>
+    <section>
+        <h2>Triangulo Isosceles</h1>
+        <p>Aqui puedes calcular la altura de un triangulo Isosceles</p>
+
+        <span>Recuerde que un triagulo isoceles tiene dos lados iguales y una base</span>
+        <div class="area__isosceles-img section-img"></div>
+        <form action="" class="calculo-isoceles">
+            <label for="ld1">
+                <span>Lado 1</span>
+                <input id="ld1" type="number">
+            </label>
+            <label for="ld2">
+                <span>Lado 2</span>
+                <input id="ld2" type="number">
+            </label>
+            <label for="base_isosceles">
+                <span>Base</span>
+                <input id="base_isosceles" type="number">
+            </label>
+            <button type="reset" class="reset"><i class='bx bx-reset' style='color:#fafafa'  ></i></button>
+            <button type="button" onclick="calcularAlturaisosceles()">Altura de Isosceles</button>
+            <div class="form__result">
+                <p id="result-isoceles"></p>
+            </div>
+        </form>
+    </section>
+
+
+
+    <script src="/src/area.js"></script>
+</body>
+</html>

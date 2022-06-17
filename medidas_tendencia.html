@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Promedio</title>
+
+</head>
+<body>
+    <header> 
+        <h1>Mate Berlin</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Areas Geometricas</a></li>
+                <li><a class="tendecia-central" href="/medidas_tendencia.html">Medidas de Tendencia Central</a></li>
+               <li><a href="/porcentajes.html">Porcentajes</a></li>
+            
+            </ul>
+        </nav>
+
+       
+    </header>
+
+    <main>
+        <h2>Medidas De Tendencia Central</h2>
+        <section class="">
+            <h2>Media Aritmetica, mediana o moda</h2>
+            <p>Calcula las medidas de Tendencia Central de tus datos no agrupados.</p>
+             <p> Puedes escribirlos desordenados e ir agregandolos separados con Comas "," </p>
+            <form action="media" id="medidas">
+                <label for="input-tendencia">
+                    <span>Digite los datos[]</span>
+                    <input type="text" id="input-tendencia" placeholder="1,5,4,8,5,5,6,5">
+                </label>
+                <button class="button__agrearDato" type="button" onclick="tomarDatos1()" >Agregar Dato</button>
+                <button type="button" class="reset" onclick="eliminarElemento()"><i class='bx bx-reset' style='color:#fafafa'  ></i></button>
+                <button type="button" onclick="mostrarResultadoMedia()">Media</button>
+                <button type="button" onclick="mostrarResultadoMediana()">Mediana</button>
+                <button type="button" onclick="mostrarResultadoModa()">Moda</button>
+                <div class="view_array" id="mostrar_array">[]</div>
+                <div class="form__result"   id="resultTendencia">
+                    
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+    <script src="/src/medidas_tendecia.js"></script>
+</body>
+</html>
