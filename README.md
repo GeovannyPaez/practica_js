@@ -1,5 +1,7 @@
 # Practica Platzi JS
-- Areas de figuras geometricas
+
+
+# Areas de figuras geometricas
 - Cuadrado
 - circulo
 - Triangulo
