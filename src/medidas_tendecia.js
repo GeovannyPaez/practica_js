@@ -33,32 +33,36 @@ let array = [];
         alert("Por favor dijite un numero mayor a 0 ");
     }
  }
- resultadoa= document.getElementById("mostrar_array");
- function quitarDato(){
-    let resultado= document.getElementById("mostrar_array");
-    let etiqueta= document.getElementById("p")
-    
-    array.splice(0,array.length);
-    resultado.removeChild("p");
-    
-    
-    
- }
+ //function agregar dato y mostrar dato.
+    const contenedor = document.createElement("div");
+    contenedor.classList.add("view_container");
  function mostrarDato (){
     let resultado = document.getElementById("mostrar_array");
-   
-    resultado.innerHTML = '';
+  
+   resultado.appendChild(contenedor);
+    contenedor.innerHTML = '';
 
     for (const dato of array) {
         let datoPrint= document.createElement('p');
-
+        datoPrint.classList.add('flex-item');
         datoPrint.innerHTML= `${dato},`;
 
-        resultado.appendChild(datoPrint);
+        contenedor.appendChild(datoPrint);
         
     }
 
 }
+//    function quitar datos o resetear 
+function quitarDato(){
+    array.splice(0,array.length);
+   const containerView= document.querySelector(".view_array");
+   const hijos = containerView.children;
+
+   for (const hijo of hijos) {
+       containerView.removeChild(hijo);
+   }
+   
+ }
 
 function calcularMedia(lista){
    

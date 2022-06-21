@@ -241,6 +241,10 @@ form button:hover{
     line-height: 40px;
    
 }
+.view_container{
+    display: flex;
+    flex-wrap: wrap;
+}
 form .view_array p{
     margin: 0;
 }
